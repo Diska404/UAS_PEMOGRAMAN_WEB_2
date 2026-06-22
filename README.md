@@ -2,13 +2,20 @@
 
 ## Identitas Mahasiswa
 
-| Keterangan | Data |
-|---|---|
-| Nama | Diska Kurnia Azzahra Putra |
-| NIM | 312210369 |
-| Mata Kuliah | Pemrograman Web 2 |
-| Tema Proyek | Sistem Manajemen Inventaris Barang |
-| Nama Aplikasi | E-Inventory |
+<table>
+  <tr>
+    <td><strong>Nama</strong></td>
+    <td>Diska Kurnia Azzahra Putra</td>
+  </tr>
+  <tr>
+    <td><strong>NIM</strong></td>
+    <td>312210369</td>
+  </tr>
+  <tr>
+    <td><strong>Mata Kuliah</strong></td>
+    <td>Pemrograman Web 2</td>
+  </tr>
+</table>
 
 ## Deskripsi Proyek
 
@@ -284,6 +291,14 @@ Pada bagian harga, pengujian dilakukan dengan input manual untuk memastikan data
 Form edit barang digunakan untuk mengubah data yang sudah tersimpan. Pada screenshot ini terlihat bahwa data yang sudah masuk dapat dipanggil kembali ke dalam modal, kemudian diperbarui melalui endpoint API yang dilindungi token.
 
 ![Form Edit Barang](docs/screenshots/edit-barang.png)
+
+## Link Repository
+
+Repository GitHub proyek:
+
+```text
+https://github.com/Diska404/UAS_PEMOGRAMAN_WEB_2
+```
 
 ## URL Demo Aplikasi
 
