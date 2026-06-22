@@ -1,0 +1,59 @@
+{
+  "info": {
+    "name": "UAS Web 2 E-Inventory",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080/api"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{base_url}}/login",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@inventory.test\",\n  \"password\": \"admin123\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Barang 401 Tanpa Token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{base_url}}/barang",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id_kategori\": 1,\n  \"id_supplier\": 1,\n  \"kode_barang\": \"TEST-001\",\n  \"nama_barang\": \"Barang Test\",\n  \"stok\": 10,\n  \"satuan\": \"unit\",\n  \"harga\": 10000,\n  \"deskripsi\": \"Data uji coba\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Get Barang",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/barang"
+      }
+    }
+  ]
+}

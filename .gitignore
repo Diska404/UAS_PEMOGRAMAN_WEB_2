@@ -1,0 +1,7 @@
+backend-api/.env
+backend-api/writable/cache/*
+backend-api/writable/logs/*
+backend-api/writable/session/*
+backend-api/writable/uploads/*
+.DS_Store
+Thumbs.db

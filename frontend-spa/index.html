@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Inventory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+    <div id="app">
+        <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+                <router-link to="/" class="text-xl font-bold text-slate-900">E-Inventory</router-link>
+                <nav class="flex items-center gap-2 text-sm font-medium">
+                    <router-link to="/" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900">Beranda</router-link>
+                    <router-link v-if="isLoggedIn" to="/dashboard" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900">Dashboard</router-link>
+                    <router-link v-if="isLoggedIn" to="/barang" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900">Barang</router-link>
+                    <router-link v-if="!isLoggedIn" to="/login" class="rounded-lg bg-slate-900 px-4 py-2 text-white hover:bg-slate-700">Login</router-link>
+                    <button v-if="isLoggedIn" @click="logout" class="rounded-lg bg-rose-600 px-4 py-2 text-white hover:bg-rose-700">Logout</button>
+                </nav>
+            </div>
+        </header>
+        <main class="mx-auto max-w-7xl px-4 py-8">
+            <router-view></router-view>
+        </main>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="services/api.js"></script>
+    <script src="components/Home.js"></script>
+    <script src="components/Login.js"></script>
+    <script src="components/Dashboard.js"></script>
+    <script src="components/Kategori.js"></script>
+    <script src="components/Supplier.js"></script>
+    <script src="components/Barang.js"></script>
+    <script src="components/StokHistori.js"></script>
+    <script src="components/NotFound.js"></script>
+    <script src="router.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
