@@ -1,7 +1,5 @@
 # UAS Pemrograman Web 2 - E-Inventory
 
-## Identitas Mahasiswa
-
 <table>
   <tr>
     <td><strong>Nama</strong></td>
