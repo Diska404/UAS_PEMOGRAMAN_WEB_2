@@ -2,13 +2,12 @@
 
 ## Identitas Mahasiswa
 
-| Keterangan | Data |
+
 |---|---|
 | Nama | Diska Kurnia Azzahra Putra |
 | NIM | 312210369 |
 | Mata Kuliah | Pemrograman Web 2 |
-| Tema Proyek | Sistem Manajemen Inventaris Barang |
-| Nama Aplikasi | E-Inventory |
+
 
 ## Deskripsi Proyek
 
