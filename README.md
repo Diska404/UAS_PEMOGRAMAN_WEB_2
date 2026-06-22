@@ -301,7 +301,7 @@ https://github.com/Diska404/UAS_PEMOGRAMAN_WEB_2
 ## URL Demo Aplikasi
 
 ```text
-Diisi setelah aplikasi berhasil dihosting secara publik.
+https://uaspemogramanweb2.freedev.app
 ```
 
 ## Link Video Presentasi
