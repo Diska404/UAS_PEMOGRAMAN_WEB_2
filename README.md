@@ -17,9 +17,9 @@
 
 ## Deskripsi Proyek
 
-E-Inventory adalah aplikasi inventaris berbasis web yang dibuat untuk membantu pendataan stok produk komputer dan laptop. Data yang dikelola meliputi kategori produk, supplier, barang, stok tersedia, harga, serta riwayat barang masuk dan keluar. Contoh data pada aplikasi dibuat menyesuaikan inventaris toko komputer, seperti prosesor, kartu grafis, RAM, SSD, power supply, cooling, monitor, router, peripheral, laptop, dan PC rakitan.
+E-Inventory merupakan sebuah aplikasi inventaris berbasis web yang dibuat untuk membantu pendataan stok produk komputer dan laptop. Data yang dikelola meliputi kategori produk, supplier, barang, stok tersedia, harga, serta riwayat barang masuk dan keluar. Contoh data pada aplikasi dibuat menyesuaikan inventaris toko komputer, seperti prosesor, kartu grafis, RAM, SSD, power supply, cooling, monitor, router, peripheral, laptop, dan PC rakitan.
 
-Proyek ini menggunakan arsitektur terpisah antara backend dan frontend. Backend berperan sebagai RESTful API server, sedangkan frontend menjadi antarmuka pengguna berbasis Single Page Application. Dengan pemisahan tersebut, proses pengelolaan data menjadi lebih terstruktur karena frontend hanya bertugas menampilkan dan mengirim data, sementara backend menangani validasi, proses database, dan proteksi token.
+Proyek ini menggunakan arsitektur terpisah seperti backend dan frontend. Backend berperan sebagai RESTful API server, sedangkan frontend menjadi antarmuka pengguna berbasis Single Page Application. Dengan pemisahan tersebut, proses pengelolaan data menjadi lebih terstruktur karena frontend hanya bertugas menampilkan dan mengirim data, sementara backend menangani validasi, proses database, dan proteksi token.
 
 ## Fitur Aplikasi
 
@@ -307,9 +307,5 @@ https://uaspemogramanweb2.freedev.app
 ## Link Video Presentasi
 
 ```text
-Diisi setelah video presentasi diunggah ke YouTube.
+https://youtu.be/LhARrsg2Uyo
 ```
-
-## Catatan Deployment
-
-Aplikasi dapat dijalankan secara lokal dengan dua server, yaitu backend CodeIgniter 4 dan frontend VueJS SPA. Untuk demo publik, backend perlu ditempatkan pada hosting yang mendukung PHP dan MySQL. Frontend dapat ditempatkan pada hosting yang sama atau layanan static hosting, selama alamat API pada frontend diarahkan ke backend yang aktif dan konfigurasi CORS pada backend tetap berjalan.
